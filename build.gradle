@@ -7,8 +7,13 @@ repositories {
 }
 
 dependencies {
-    runtimeOnly 'org.hamcrest:hamcrest-core:2.2'
+    implementation 'org.hamcrest:hamcrest-core:2.2'
     testImplementation 'junit:junit:4.13'
+}
+
+// alias
+task compile {
+    dependsOn compileJava
 }
 
 application {
