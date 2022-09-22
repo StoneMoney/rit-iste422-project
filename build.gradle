@@ -2,7 +2,15 @@ plugins {
     id 'application'
 }
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtimeOnly 'org.hamcrest:hamcrest-core:2.2'
+    testImplementation 'junit:junit:4.13'
+}
+
 application {
-    mainModule = "project"
     mainClass = "RunEdgeConvert"
 }
